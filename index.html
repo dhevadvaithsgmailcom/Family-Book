@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Family Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1> 
+Family Book
+</h1>
+
+<img id ="Family" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF3D1BnY6Of7Ay5__hLZO_L23WTHmxOxoY7A&usqp=CAU">
+<br>
+<br>
+<br>
+<button onclick="nextscreen()">
+Next Slide
+</button>
+<br>
+<br>
+<br>
+<p id="Family Members">
+"Family"
+  </p>
+  <script>
+var reason =["Father is the kindest in my family",
+            "Mother is the best and she is very affectionable to me.",
+            "Sister and me have very often fights but we end up friends.",
+            "Aunt is the family member which corrects my way during the journey of playing tennis."];
+
+var img =["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjCqbk-oeR7z5XZhgSGFsbhB70oirNbieIcw&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLgjqBTBxDNmgvNq8kJxEwCKBEBO3pVXj3XA&usqp=CAU", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVj7Z2wFFywgcJbRinySeUIG_PyXaB_Y2uxg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0fawRIj-Q8K6un9AKFTQ6U_F6VXExqRmYnQ&usqp=CAU"
+];
+
+var i=0;
+function nextscreen(){document.getElementById("Family Members").innerHTML=reason[i];
+document.getElementById("Family").src=img[i];i++;
+}
+
+  </script>
+  </body>
+  </html>
